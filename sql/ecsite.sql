@@ -1,6 +1,7 @@
 SET name utf8;
 SET foreign_key_checks=0;
-DROP database IF NOT EXISTS ecsite;
+DROP database IF EXISTS ecsite;
+CREATE database IF NOT EXISTS ecsite;
 use ecsite;
 
 DROP TABLE IF EXISTS login_user_transaction;
@@ -15,8 +16,6 @@ CREATE TABLE login_user_transaction(
 );
 
 DROP TABLE IF EXISTS item_info_transaction;
-
-CREATE TABLE item_info_transaction;
 
 CREATE TABLE item_info_transaction(
     id int NOT NULL PRIMARY KEY auto_increment,
