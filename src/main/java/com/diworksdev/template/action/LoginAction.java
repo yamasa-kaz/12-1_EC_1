@@ -23,7 +23,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
         
         result=ERROR;
         loginDTO=loginDAO.getLoginUserInfo(loginUserId, loginPassword);
-        session.put("loginUser", loginDTO);
+        session.put("loginUser",loginDTO);
         
         if(((LoginDTO)session.get("loginUser")).getLoginFlg()) {
             result=SUCCESS;
@@ -58,9 +58,10 @@ public class LoginAction extends ActionSupport implements SessionAware{
     public Map<String,Object> getSession(){
         return session;
     }
-    
+
     @Override
-    public void setSesssion(Map<String,Object> session) {
+    public void setSession(Map<String, Object> session) {
+        // TODO 自動生成されたメソッド・スタブ
         this.session=session;
     }
 
