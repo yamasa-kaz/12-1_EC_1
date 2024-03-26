@@ -14,7 +14,7 @@
     
 <title>login画面</title>
 <style type="text/css">
-<!-- Tag Layout -->
+/* Tag Layout */
     body{
         margin:0;
         padding:0;
@@ -30,7 +30,7 @@
         text-align:center;
         margin:0 auto;
     }
-<!-- ID Layout -->
+/* ID Layout */
     #top{
         border:1px solid #333;
         width:780px;
@@ -68,11 +68,32 @@
         </div>
         <div>
             <h3>商品を購入する際にはログインをお願いします。</h3>
+            
             <s:form action="LoginAction">
-                <s:textfield name="loginUserId"/><br>
-                <s:password name="loginPassword"/><br>
-                <s:submit value="ログイン"/>
+            <table>
+                <tr>
+                    <td>
+                        <label>ログインID：</label>
+                    </td>
+                    <td>
+                        <s:textfield name="loginUserId"/>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>
+                        <label>ログインPASS：</label>
+                    </td>
+                    <td>
+                        <s:password name="loginPassword"/>
+                    </td>
+                </tr>
+            </table>
+                
+                        <s:submit value="ログイン"/>
+                    
             </s:form>
+            
             <br>
             <div>
                 <span>新規ユーザー登録は

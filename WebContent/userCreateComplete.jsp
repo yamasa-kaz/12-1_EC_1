@@ -12,7 +12,7 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     
-<title>Home画面</title>
+<title>UserCreateComplete画面</title>
 <style type="text/css">
 /* Tag Layout */
     body{
@@ -57,27 +57,25 @@
     }
 </style>
 </head>
-
 <body>
-
     <div id="header">
         <div id="pr">
         </div>
     </div>
     <div id="main">
         <div id="top">
-            <p>Home</p>
+            <p>UserCreateComplete</p>
         </div>
         <div>
-            <s:form action="HomeAction">
-                <s:submit value="商品購入"/>
-            </s:form>
+            <h3>ユーザーの登録が完了致しました。</h3>
+            <div>
+                <a href='<s:url action="HomeAction"/>'>ログインへ</a>
+            </div>
         </div>
     </div>
     <div id="footer">
         <div id="pr">
         </div>
     </div>
-
 </body>
 </html>

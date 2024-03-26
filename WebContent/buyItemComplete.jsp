@@ -12,7 +12,7 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     
-<title>Home画面</title>
+<title>BuyItemComplete画面</title>
 <style type="text/css">
 /* Tag Layout */
     body{
@@ -57,27 +57,26 @@
     }
 </style>
 </head>
-
 <body>
-
     <div id="header">
-        <div id="pr">
-        </div>
+        <div id="pr"></div>
     </div>
+    
     <div id="main">
         <div id="top">
-            <p>Home</p>
+            <p>BuyItemComplete</p>
         </div>
         <div>
-            <s:form action="HomeAction">
-                <s:submit value="商品購入"/>
-            </s:form>
-        </div>
-    </div>
-    <div id="footer">
-        <div id="pr">
+            <p>購入手続きが完了致しました。</p>
+            <div>
+                <a href='<s:url action="MyPageAction"/>'>マイページ</a>
+                <span>から購入履歴の確認が可能です。</span>
+            </div>
         </div>
     </div>
 
+    <div id="footer">
+        <div id="pr"></div>
+    </div>
 </body>
 </html>

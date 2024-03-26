@@ -12,7 +12,7 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     
-<title>Home画面</title>
+<title>BuyItemConfirm画面</title>
 <style type="text/css">
 /* Tag Layout */
     body{
@@ -57,26 +57,50 @@
     }
 </style>
 </head>
-
 <body>
-
     <div id="header">
-        <div id="pr">
-        </div>
+        <div id="pr"></div>
     </div>
     <div id="main">
         <div id="top">
-            <p>Home</p>
+            <p>BuyItemConfirm</p>
         </div>
         <div>
-            <s:form action="HomeAction">
-                <s:submit value="商品購入"/>
+            <s:form action="BuyItemConfirmAction">
+            <table>
+                <tr>
+                    <td>商品名</td>
+                    <td>
+                        <s:property value="session.buyItem_name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>値段</td>
+                    <td>
+                        <s:property value="session.buyItem_price"/>
+                        <span>円</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>購入個数</td>
+                    <td>
+                        <s:property value="session.stock"/>
+                        <span>個</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>支払い方法</td>
+                    <td>
+                        <s:property value="session.pay"/>
+                    </td>
+                </tr>
+            </table>
+            <s:submit value="完了"/>
             </s:form>
         </div>
     </div>
-    <div id="footer">
-        <div id="pr">
-        </div>
+    <div id="fotter">
+        <div id="pr"></div>
     </div>
 
 </body>

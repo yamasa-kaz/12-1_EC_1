@@ -12,7 +12,7 @@
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
     
-<title>BuyItem画面</title>
+<title>UserCreateConfirm画面</title>
 <style type="text/css">
 /* Tag Layout */
     body{
@@ -60,73 +60,51 @@
 
 <body>
     <div id="header">
-        <div id="pr">
-        </div>
+        <div id="pr"></div>
     </div>
-    <div id="main">
+    <div id ="main">
         <div id="top">
-            <p>BuyItem</p>
+            <p>UserCreateConfirm</p>
         </div>
         <div>
-            <s:form action="BuyItemAction">
+            <h3>登録する内容は以下でよろしいですか。</h3>
+            
+                <s:form action="UserCreateCompleteAction">
                 <table>
-                    <tr>
+                    <tr id="box">
                         <td>
-                            <span>商品名</span>
+                            <label>ログインID：</label>
                         </td>
                         <td>
-                            <s:property value="session.buyItem_name"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span>値段</span>
-                        </td>
-                        <td>
-                            <s:property value="session.buyItem_price"/>
-                                <span>円</span>
+                            <s:property value="loginUserId" escapeHtml="false"/>
                         </td>
                     </tr>
-                    <tr>
+                    <tr id="box">
                         <td>
-                            <span>在庫</span>
+                            <label>ログインPASS：</label>
                         </td>
                         <td>
-                            <select name="stock">
-                                <option value="1" selected="selected">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
+                            <s:property value="loginPassword" escapeHtml="false"/>
                         </td>
                     </tr>
-                    <tr>
+                    <tr id="box">
                         <td>
-                            <span>支払い方法</span>
+                            <label>ユーザー名：</label>
                         </td>
                         <td>
-                            <input type="radio" name="pay" value="1" checked="checked">現金払い
-                            <input type="radio" name="pay" value="2">クレジットカード
+                            <s:property value="userName" escapeHtml="false"/>
                         </td>
                     </tr>
                 </table>
                     
-                            <s:submit value="購入"/>
+                            <s:submit value="完了"/>
                         
-                
-            </s:form>
-            <br>
-                <div>
-                    <span>前画面に戻る場合は</span>
-                    <a href='<s:url action="HomeAction"/>'>こちら</a>
-                </div>
+                </s:form>
+            
         </div>
     </div>
     <div id="footer">
-        <div id="pr">
-        </div>
+        <div id="pr"></div>
     </div>
-    
 </body>
 </html>
