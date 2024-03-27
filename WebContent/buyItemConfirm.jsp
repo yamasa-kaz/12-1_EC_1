@@ -99,7 +99,7 @@
             </s:form>
         </div>
     </div>
-    <div id="fotter">
+    <div id="footer">
         <div id="pr"></div>
     </div>
 
