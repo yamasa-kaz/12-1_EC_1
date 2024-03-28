@@ -1,4 +1,4 @@
-SET name utf8;
+SET names utf8;
 SET foreign_key_checks=0;
 DROP database IF EXISTS ecsite;
 CREATE database IF NOT EXISTS ecsite;

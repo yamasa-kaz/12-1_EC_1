@@ -64,7 +64,7 @@ public class UserCreateConfirmAction extends ActionSupport implements SessionAwa
         return errorMessage;
     }
     
-    public void setErrorMessage(String erroMessage) {
-        this.errorMessage=erroMessage;
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage=errorMessage;
     }
 }
